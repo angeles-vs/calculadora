@@ -76,6 +76,7 @@ function ajustes_calculadora_page()
             <b>API URL</b><br>
             <input type="text" name="calculadora_api_url" value="<?= get_option('calculadora_api_url') ?>">
             <input type="hidden" name="action" value="guardar_calculadora_api_url">
+            <p>Ejemplo: http://localhost:8000</p>
         </label>
         <?php submit_button( __( 'Guardar', 'textdomain' ), 'primary', 'calculadora-api',     true ); ?>
     </form>
@@ -89,7 +90,7 @@ function calculadora_page()
     $api_url = get_option('calculadora_api_url');
 
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $api_url);
+    curl_setopt($curl, CURLOPT_URL, $api_url.'/add/1/1');
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_HEADER, false);
     $data = curl_exec($curl);
