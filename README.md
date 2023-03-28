@@ -1,5 +1,5 @@
 # Calculadora 🧮
-_Esta calculadora es un proyecto para la empresa Izertis. Consta de un plugin WordPress y una API Symfony que ejecuta las operaciones._
+_Esta calculadora consta de un plugin WordPress y una API Symfony que ejecuta las operaciones._
 
 # Requerimientos
 - Sitio Wordpress operativo
