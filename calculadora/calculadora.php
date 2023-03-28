@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Calculadora
-Description: Calculadora desarrollada para el reto de AZERTIS.
+Description: Esta calculadora consta de un plugin WordPress y una API Symfony que ejecuta las operaciones.
 Author: Angeles Viña
 Version: 1.0
-Author URI: https://github.com/angelessevilla
+Author URI: https://github.com/angeles-vs
 */
 
 // INICIAMOS GUARDADO URL DE LA API 
@@ -113,7 +113,7 @@ function calculadora_page()
     
     ?>
     <h1 style="color:white;margin-top:3rem;">
-        <?php esc_html_e('Reto Azertis: Calculadora y API por Ángeles Viña.'); ?>
+        <?php esc_html_e('Calculadora y API por Ángeles Viña.'); ?>
 
     </h1>
     <?php
